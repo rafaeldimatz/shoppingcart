@@ -1,3 +1,5 @@
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 const ProductItem = ({data,addCart}) => {
 let {id,name,price,image} = data;
     return( 
@@ -6,7 +8,7 @@ let {id,name,price,image} = data;
         <img src={image} alt="imagen"></img>
         <hr/>
         <h5>Price: ${price}</h5>
-        <button onClick={()=>addCart(id)}>Add</button>
+        <button onClick={()=>addCart(id)}>Add  <FontAwesomeIcon icon={faCartPlus}/></button>
     </div>
     )
 }
