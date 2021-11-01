@@ -4,7 +4,8 @@ let {id,name,price,image} = data;
     <div style={{border:"thin solid gray", padding:'1rem'}}>
         <h4>{name}</h4>
         <img src={image} alt="imagen"></img>
-        <h5>${price}</h5>
+        <hr/>
+        <h5>Price: ${price}</h5>
         <button onClick={()=>addCart(id)}>Add</button>
     </div>
     )
