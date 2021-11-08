@@ -37,7 +37,7 @@ const Products = () => {
       </article>
       <article style={{padding:'20px',textAlign: 'initial'}}>
       <h3 style={{textAlign: 'initial'}}>Products Cart</h3>
-        <button onClick={clearCart}>Clear Cart</button>
+        <button style={{cursor:'pointer'}} onClick={clearCart}>Clear Cart</button>
         {cart.map((item, index) => (
           <CartItem
             key={index}

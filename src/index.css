@@ -102,6 +102,7 @@ flex: 1;
 }
 
 .btn-submit{
+  cursor:pointer;
   background-color:var(--negro);
   color:var(--blanco);
 }

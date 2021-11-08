@@ -7,8 +7,8 @@ const CartItem = ({data,delFromCart,delAllFromCart}) => {
     <div className="cartitem"> 
       <h4>{name}</h4>
       <h5>${price} x {quantity} = ${price*quantity} </h5>
-      <button onClick={()=>delFromCart(id)}>Remove One <FontAwesomeIcon icon={faTrashAlt}/></button>
-      <button onClick={()=>delFromCart(id,true)}>Remove All <FontAwesomeIcon icon={faTrash}/></button>
+      <button style={{cursor:'pointer'}} onClick={()=>delFromCart(id)}>Remove One <FontAwesomeIcon icon={faTrashAlt}/></button>
+      <button style={{cursor:'pointer'}} onClick={()=>delFromCart(id,true)}>Remove All <FontAwesomeIcon icon={faTrash}/></button>
     </div>
   );
 };

@@ -8,7 +8,7 @@ let {id,name,price,image} = data;
         <img src={image} alt="imagen"></img>
         <hr/>
         <h5>Price: ${price}</h5>
-        <button onClick={()=>addCart(id)}>Add  <FontAwesomeIcon icon={faCartPlus}/></button>
+        <button style={{cursor:'pointer'}} onClick={()=>addCart(id)}>Add  <FontAwesomeIcon icon={faCartPlus}/></button>
     </div>
     )
 }
