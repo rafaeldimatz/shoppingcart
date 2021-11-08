@@ -8,7 +8,7 @@ import CartItem from "./CartItem";
 import ProductItem from "./ProductItem";
 const Products = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-  const { products, cart,totalCart } = state; // Son las constantes definidas en el reducer
+  const { products, cart } = state; // Son las constantes definidas en el reducer
 
   useReducer();
 
@@ -29,10 +29,10 @@ const Products = () => {
   };
   return (
     <div>
-      <h1>Shopping Cart</h1>
+      <div className="topNav"><h1>Shopping Cart</h1></div>
       <article className="box grid-responsive">
         {products.map((product) => (
-          <ProductItem key={products.id} data={product} addCart={addCart} />
+          <ProductItem key={product.id} data={product} addCart={addCart} />
         ))}
       </article>
       <article style={{padding:'20px',textAlign: 'initial'}}>
